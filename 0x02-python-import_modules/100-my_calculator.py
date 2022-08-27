@@ -5,8 +5,8 @@ from calculator_1 import add, div, mul, sub
 
 
 if __name__ == "__main__":
-    argc = len(argv) - 1
-    if argc != 3:
+    argc = len(argv)
+    if argc != 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
     operator = argv[2]
