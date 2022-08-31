@@ -1,0 +1,1 @@
+This directory is about maps, lambda functions, reduce and filter.
