@@ -6,5 +6,4 @@ def uniq_add(my_list=[]):
         if new_list.count(my_list[i]) == 0:
             new_list.append(my_list[i])
             sum += my_list[i]
-    return (sum)
- 
+    return sum
