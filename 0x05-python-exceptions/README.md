@@ -1,0 +1,1 @@
+This folder talks about Error handling and Exceptions.
