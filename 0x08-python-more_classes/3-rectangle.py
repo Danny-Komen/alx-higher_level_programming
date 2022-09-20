@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-'''module: 2-rectangle
+'''
 This is a Rectangle class.
 '''
 
@@ -73,3 +73,15 @@ class Rectangle:
         if self.__height == 0 or self.width == 0:
             return 0
         return (self.__height + self.width) * 2
+    
+    def __str__(self):
+        """Returns a printable representation of the rectangle.
+        Represents the rectangle with the # character.
+        """
+        
+        rect = []
+        for i in range(self.__height):
+            [rect.append('#') for j in range(self.__width)]
+            if i != self.__height - 1:
+                rect.append("\n")
+        return ("".join(rect))
