@@ -1,17 +1,16 @@
 #!/usr/bin/python3
-"""
-Has definition of Rectangle class.
-"""
-
-
-from turtle import width
+"""Has definition of Rectangle class."""
 
 
 class Rectangle:
-    """
-    The rectangle class.
-    """
+    """The rectangle class."""
+    
     def __init__(self, width=0, height=0):
+        """Initoalize a new Rectangle.
+        Args:
+            width (int): The width of the rectangle.
+            height (int): The height of the new rectangle.
+        """
         self.__width = width
         self.__height = height
         
@@ -26,16 +25,20 @@ class Rectangle:
                 raise ValueError("height must be >= 0")
         else:
             raise TypeError("height must be an integer")
-        
+     
+    @property   
     def width(self):
-        return width
+        return self.__width
     
+    @property
     def height(self):
-        return height
+        return self.__height
     
+    @width.setter
     def width(self, value):
         self.__width = value
-        
+    
+    @height.setter
     def height(self, value):
         self.__height = value
     
