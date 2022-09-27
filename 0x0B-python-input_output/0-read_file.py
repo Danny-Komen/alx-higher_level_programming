@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 def read_file(filename=""):
     with open(filename, encoding="uft-8") as f:
-        f.read()
+        print(f.read(), end="")
